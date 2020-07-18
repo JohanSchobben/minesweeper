@@ -15,10 +15,10 @@
   <script>
     const game = document.querySelector("game-minesweeper");
     game.addEventListener("lose", event => {
-      console.log("lose", event.detail)
+      alert("verloren")
     })
     game.addEventListener("win", event => {
-      console.log("win", event.detail)
+      alert(`gewoonen in ${Math.floor(event.detail.time)} seconde`)
     })
   </script>
 </body>

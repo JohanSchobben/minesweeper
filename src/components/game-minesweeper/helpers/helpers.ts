@@ -103,9 +103,6 @@ export const flagTile = (board: Board, x: number, y: number): Board => {
     .filter(tile => tile.state === "flagged")
     .length;
 
-    console.table(board.tiles.flat())
-
-
     if(goodFlags === board.amountOfMines) {
       gameState =  "win"
     }
