@@ -10,9 +10,10 @@ fs.readFile(indexHtml, "utf-8", function(err, data) {
   const newData = data.replace(/\/build/, "build");
   fs.writeFile(indexHtml, newData, 'utf-8', function (err) {
     if (err) throw err;
-    ghPages.publish("www/minesweeper")
+    ghPages.publish("www")
     console.log('update complete');
   });
 })
 
 
+ghPages.publish("www/minesweeper")
