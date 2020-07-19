@@ -1,1 +1,1 @@
-import{p as e,b as a}from"./p-c24bafe5.js";e().then(e=>a([["p-0bc37394",[[1,"game-minesweeper",{board:[32]}]]],["p-8e188a2f",[[1,"my-component",{first:[1],middle:[1],last:[1]}]]]],e));
+import{p as e,b as a}from"./p-c24bafe5.js";e().then(e=>a([["p-b94c8236",[[1,"game-minesweeper",{board:[32]}]]],["p-8e188a2f",[[1,"my-component",{first:[1],middle:[1],last:[1]}]]]],e));
