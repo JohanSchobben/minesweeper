@@ -1,8 +1,7 @@
-import { Component, ComponentInterface, Host, h, State, EventEmitter, Event, Element } from '@stencil/core';
+import { Component, ComponentInterface, Host, h, State, EventEmitter, Event } from '@stencil/core';
 import { Board } from './models/board.model';
 import { setupBoard, openTile, flagTile } from './helpers/helpers';
 import { Result } from './models/result.model';
-import { HTMLStencilElement } from '@stencil/core/internal';
 
 @Component({
   tag: 'game-minesweeper',
@@ -11,9 +10,6 @@ import { HTMLStencilElement } from '@stencil/core/internal';
 })
 export class GameMinesweeper implements ComponentInterface {
   private startTime: number;
-  private boardElement :HTMLElement;
-  @Element() el: HTMLStencilElement;
-
   @State() private board: Board;
 
   @Event() lose: EventEmitter<Result>;
@@ -99,7 +95,7 @@ export class GameMinesweeper implements ComponentInterface {
             <button class="start-button" onClick={this.onStartClick}>start</button>
             <span>{this.board?.remainingMines ?? "-"}</span>
           </div>
-          <div ref={el => this.boardElement = el} class={"board-"+this.board?.state}>
+          <div class={"board-"+this.board?.state}>
             {this.renderRows()}
           </div>
         </div>
