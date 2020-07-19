@@ -13,8 +13,6 @@ export const config: Config = {
     },
     {
       type: 'www',
-      baseUrl: "https://johanschobben.github.io/minesweeper/",
-
       serviceWorker: null // disable service workers
     }
   ]

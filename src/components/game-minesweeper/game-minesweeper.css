@@ -1,5 +1,7 @@
 :host {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 *
@@ -22,11 +24,12 @@
   flex-direction: column;
   padding: 1rem;
   border: 1px solid red;
+  margin: auto;
 }
 
 .tile {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 0;
   border: 0.5px solid navy;
 }
